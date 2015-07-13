@@ -4,3 +4,8 @@ C:\Users\lvton_000\AppData\Local\Temporary Projects\UpYunLibrary\obj\x86\Debug\U
 C:\Users\lvton_000\AppData\Local\Temporary Projects\UpYunLibrary\obj\x86\Debug\UpYunLibrary.pdb
 C:\Users\lvton_000\documents\visual studio 2010\Projects\UpYunLibrary\UpYunLibrary\obj\x86\Debug\UpYunLibrary.exe
 C:\Users\lvton_000\documents\visual studio 2010\Projects\UpYunLibrary\UpYunLibrary\obj\x86\Debug\UpYunLibrary.pdb
+\\psf\Home\Google Drive\work\csharp\c-sharp-sdk\UpYunLibrary\obj\x86\Debug\UpYunLibrary.exe
+\\psf\Home\Google Drive\work\csharp\c-sharp-sdk\UpYunLibrary\obj\x86\Debug\UpYunLibrary.pdb
+\\psf\Home\Google Drive\work\csharp\c-sharp-sdk\UpYunLibrary\bin\Debug\UpYunLibrary.exe
+\\psf\Home\Google Drive\work\csharp\c-sharp-sdk\UpYunLibrary\bin\Debug\UpYunLibrary.pdb
+\\psf\Home\Google Drive\work\csharp\c-sharp-sdk\UpYunLibrary\obj\x86\Debug\UpYunLibrary.csprojResolveAssemblyReference.cache

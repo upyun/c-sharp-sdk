@@ -16,7 +16,7 @@ namespace UpYunLibrary
     {
         static void Main(string[] args)
         {
-            UpYun upyun = new UpYun("空间名称", "操作员", "密码");
+            UpYun upyun = new UpYun("bucket", "username", "password");
 
             /*
             /// 切换 API 接口的域名
@@ -34,16 +34,16 @@ namespace UpYunLibrary
             /// 上传文件
             Hashtable headers = new Hashtable();
             //uy.delete("tes\ttd.jpg", headers);
-            FileStream fs = new FileStream("c:\\1c36319a4ec53893663bd1f1a7b7051e.jpg", FileMode.Open, FileAccess.Read);
+            FileStream fs = new FileStream("..\\..\\test.jpeg", FileMode.Open, FileAccess.Read);
             BinaryReader r = new BinaryReader(fs);
             byte[] postArray = r.ReadBytes((int)fs.Length);
 
             /// 设置待上传文件的 Content-MD5 值（如又拍云服务端收到的文件MD5值与用户设置的不一致，将回报 406 Not Acceptable 错误）
-            upyun.setContentMD5(UpYun.md5_file("c:\\1c36319a4ec53893663bd1f1a7b7051e.jpg"));
+            // upyun.setContentMD5(UpYun.md5_file("..\\..\\test.jpeg"));
 
             /// 设置待上传文件的 访问密钥（注意：仅支持图片空！，设置密钥后，无法根据原文件URL直接访问，需带 URL 后面加上 （缩略图间隔标志符+密钥） 进行访问）
             /// 如缩略图间隔标志符为 ! ，密钥为 bac，上传文件路径为 /folder/test.jpg ，那么该图片的对外访问地址为： http://空间域名/folder/test.jpg!bac
-            upyun.setFileSecret("bac");
+            // upyun.setFileSecret("bac");
             Console.WriteLine("上传文件");
             bool b = upyun.writeFile("/a/test.jpg", postArray, true);
             // 上传文件时可使用 upyun.writeFile("/a/test.jpg",postArray, true); //进行父级目录的自动创建（最深10级目录）
