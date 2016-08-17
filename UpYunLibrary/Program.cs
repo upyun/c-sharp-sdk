@@ -277,7 +277,7 @@ namespace UpYunLibrary
         * return 空间占用量，失败返回 null
         */
 
-        public int getFolderUsage(string url)
+        public long getFolderUsage(string url)
         {
             Hashtable headers = new Hashtable();
             int size;
@@ -288,7 +288,7 @@ namespace UpYunLibrary
                 StreamReader sr = new StreamReader(resp.GetResponseStream(), Encoding.UTF8);
                 string strhtml = sr.ReadToEnd();
                 resp.Close();
-                size = int.Parse(strhtml);
+                size = long.Parse(strhtml);
             }
             catch (Exception)
             {
@@ -302,9 +302,9 @@ namespace UpYunLibrary
            * @param $path 目标路径
            * return 空间占用量，失败返回 null
            */
-        public int getBucketUsage()
+        public long getBucketUsage()
         {
-            return getFolderUsage("");
+            return getFolderUsage("/");
         }
         /**
         * 创建目录
